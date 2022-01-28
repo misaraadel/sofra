@@ -1,0 +1,78 @@
+@media (max-width: 999px) {
+    .navbar{
+        .nav-toggle{
+            display: block !important;
+        }
+
+        .top-nav .content{
+            flex-direction: column !important;
+
+            .top-list li a{
+                font-size: 15px;
+            }
+        }
+
+        &.scrolled{
+            .navbar-nav{
+                top: 69px !important;
+            }
+        }
+
+        .navbar-nav{
+            width: 100%;
+            position: absolute;
+            height: 100vh;
+            background-color: #21428E;
+            top: 256px;
+            right: -100%;
+            flex-direction: column !important;
+            padding: 40px 0px 0px;
+            transition: all .4s linear;
+
+            &.active-nav{
+                right: 0px !important;
+            }
+
+            li{
+                width: 100%;
+                margin: 0px 0px 20px 0px;
+                text-align: center;
+
+                a{
+                    width: 100%;
+                    text-align: center;
+                }   
+            }
+
+        }
+    }
+
+    .heading{
+
+        h4{
+            width: 100%;
+            font-size: 20px;
+            text-align: unset !important;
+        }
+
+        .learn-more{
+            width: 100%;
+            justify-content: flex-end !important;
+        }
+    }
+
+    .form-content .form-data{
+        padding: 20px 10px !important;
+    }
+
+    .form-content .form-data .forget-pass{
+        font-size: 10px !important;
+    }
+    .form-content .form-data .socail-media {
+        justify-content: space-around !important;
+    }
+    .form-content .form-data .socail-media li img{
+        width: 40px;
+        height: 40px;
+    }
+}
